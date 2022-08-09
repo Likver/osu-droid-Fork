@@ -83,7 +83,6 @@ public class SkinJsonReader extends SkinReader {
         OsuSkin skin = OsuSkin.get();
         JSONObject data = currentSliderData;
         skin.sliderBodyWidth.setFromJson(data);
-        skin.sliderBodyWidth.setFromJson(data);
         skin.sliderBodyBaseAlpha.setFromJson(data);
         skin.sliderHintWidth.setFromJson(data);
         skin.sliderHintShowMinLength.setFromJson(data);
@@ -92,6 +91,7 @@ public class SkinJsonReader extends SkinReader {
         skin.sliderHintEnable.setFromJson(data);
         skin.sliderBodyColor.setFromJson(data);
         skin.sliderBorderColor.setFromJson(data);
+        skin.sliderBorderWidth.setFromJson(data);
         skin.sliderHintColor.setFromJson(data);
     }
 
