@@ -22,11 +22,11 @@ public class CursorTrail extends ParticleSystem {
     ) {
         super(
             emitter,
+            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
+            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
+            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
+            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
             pTextureRegion
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            
         );
 
         fadeOut();
