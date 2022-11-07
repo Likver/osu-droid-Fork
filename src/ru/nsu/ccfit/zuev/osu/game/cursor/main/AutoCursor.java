@@ -1,7 +1,7 @@
 package ru.nsu.ccfit.zuev.osu.game.cursor.main;
 
 import org.anddev.andengine.entity.modifier.MoveModifier;
-import org.anddev.andengine.util.modifier.ease.EaseQuadOut;
+import org.anddev.andengine.util.modifier.ease.EaseCircularOut;
 import org.anddev.andengine.util.modifier.ease.IEaseFunction;
 
 import ru.nsu.ccfit.zuev.osu.Config;
@@ -21,7 +21,7 @@ public class AutoCursor extends CursorEntity implements ISliderListener {
     /**
      * The Easing function to be used on the cursor.
      */
-    private final IEaseFunction easeFunction = EaseQuadOut.getInstance();
+    private final IEaseFunction easeFunction = EaseCircularOut.getInstance();
 
     public AutoCursor() {
         super();
