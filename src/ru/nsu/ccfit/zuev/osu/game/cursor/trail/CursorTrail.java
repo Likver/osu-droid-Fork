@@ -22,9 +22,9 @@ public class CursorTrail extends ParticleSystem {
     ) {
         super(
             emitter,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailMaxMultiplier : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
             pTextureRegion
         );
 
@@ -35,7 +35,7 @@ public class CursorTrail extends ParticleSystem {
     }
 
     private void fadeOut() {
-        float defaultLifeTime = 0.20f;
+        float defaultLifeTime = 0.25f;
         float longLifeTime = defaultLifeTime * 2;
         float lifeTime = Config.isUseLongTrail()? longLifeTime : defaultLifeTime;
 
