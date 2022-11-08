@@ -49,10 +49,10 @@ public class Replay {
     public static float oldFLFollowDelay = FlashLightEntity.defaultMoveDelayS;
 
     public Replay() {
+        cursorMoves.add(new MoveArray(600));
         cursorMoves.add(new MoveArray(200));
-        cursorMoves.add(new MoveArray(50));
         for (int i = 2; i < GameScene.CursorCount; i++) {
-            cursorMoves.add(new MoveArray(15));
+            cursorMoves.add(new MoveArray(60));
         }
         cursorIndex = new int[GameScene.CursorCount];
         lastMoveIndex = new int[GameScene.CursorCount];
