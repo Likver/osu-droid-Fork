@@ -72,7 +72,7 @@ public class ParticleSystem extends Entity {
 
 	/**
 	 * Creates a ParticleSystem with a {@link RectangleParticleEmitter}.
-	 * @deprecated Instead use {@link ParticleSystem#ParticleSystem(IParticleEmitter, float, float, int, TextureRegion)}.
+	 * @deprecated Instead use {@link ParticleSystem#ParticleSystem(IParticleEmitter, float, float, float, int, TextureRegion)}.
 	 */
 	@Deprecated
 	public ParticleSystem(final float pX, final float pY, final float pWidth, final float pHeight, final float pRateMinimum, final float pRateMaximum, final int pParticlesMaximum, final TextureRegion pTextureRegion) {
