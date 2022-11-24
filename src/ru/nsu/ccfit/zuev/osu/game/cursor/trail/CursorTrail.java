@@ -42,3 +42,4 @@ public class CursorTrail extends ParticleSystem {
         addParticleModifier(new ExpireModifier(lifeTime));
         addParticleModifier(new AlphaModifier(1.0f, 0.5f, 0f, lifeTime));
     }
+}
