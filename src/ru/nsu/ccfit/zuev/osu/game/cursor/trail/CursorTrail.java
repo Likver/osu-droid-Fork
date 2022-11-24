@@ -22,9 +22,9 @@ public class CursorTrail extends ParticleSystem {
     ) {
         super(
             emitter,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
-            Config.isUseLongTrail()? trailAmount * longTrailRateMultiplier : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
+            Config.isUseLongTrail()? trailAmount * 2 : trailAmount,
             pTextureRegion
         );
 
@@ -40,6 +40,5 @@ public class CursorTrail extends ParticleSystem {
         float lifeTime = Config.isUseLongTrail()? longLifeTime : defaultLifeTime;
 
         addParticleModifier(new ExpireModifier(lifeTime));
-        addParticleModifier(new AlphaModifier(1.0f, 0f, 0f lifeTime));
+        addParticleModifier(new AlphaModifier(1.0f, 0.5f, 0f, lifeTime));
     }
-}
