@@ -2,9 +2,9 @@ name: Master Branch
 
 on:
   push:
-    branches: [ skinnable-sounds ]
+    branches: [ skinnableSounds ]
   pull_request:
-    branches: [ skinnable-sounds ]
+    branches: [ skinnableSounds ]
 
 jobs:
   build:
