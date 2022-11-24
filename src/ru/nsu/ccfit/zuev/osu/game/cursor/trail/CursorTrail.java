@@ -11,7 +11,7 @@ import javax.microedition.khronos.opengles.GL10;
 
 import ru.nsu.ccfit.zuev.osu.Config;
 import ru.nsu.ccfit.zuev.osu.game.cursor.main.CursorSprite;
-
+/*i need help*/
 public class CursorTrail extends ParticleSystem {
     public CursorTrail(
             PointParticleEmitter emitter,
