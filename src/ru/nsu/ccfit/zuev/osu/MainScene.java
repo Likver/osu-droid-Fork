@@ -597,7 +597,7 @@ public class MainScene implements IUpdateHandler {
         int randNum = new Random().nextInt((1 - 0) + 1) + 0;
         String welcomeSound = welcomeSounds[randNum];
         ResourceManager.getInstance().getSound(welcomeSound).play();
-        hitsound = ResourceManager.getInstance().getSound("menuhit");
+        hitsound = ResourceManager.getInstance().getSound("menuhit").play();
 
         /*if (BuildConfig.DEBUG) {
             SupportSprite supportSprite = new SupportSprite(Config.getRES_WIDTH(), Config.getRES_HEIGHT()) {
